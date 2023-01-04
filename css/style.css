@@ -1,0 +1,339 @@
+/*=======================
+       Google fonts
+ ========================*/
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+ /*=======================
+         Global css
+  ========================*/
+ body{
+    font-family: 'Titillium Web', sans-serif;
+ }
+ a{
+   text-decoration: none;
+ }
+ html,body{
+  scroll-behavior: smooth;
+ }
+
+ header{
+
+ }
+ header nav{
+  
+ }
+
+
+ 
+#section1{
+  height: 100vh;
+  position: relative;
+  background-color: darkseagreen;
+  z-index: 9;
+}
+#section1 #particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#section1 ul{
+ padding: 0;
+ text-align: center;
+}
+#section1 ul li{
+  list-style: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+} 
+
+/* head2 {
+
+}
+head2 a{
+  
+} */
+
+ #popup {
+  position: fixed;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background: #FFF;
+  text-align: center;
+  /* visibility: hidden; */
+  display: none;
+  z-index: 99;
+  transition: all o.3s ease-in-out;
+}
+#popup.active{
+  /* visibility: visible; */
+  display: block;
+  transition: all o.3s ease-in-out;
+}
+
+.header2{
+  color: red;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+/*     colors      */
+.colors{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colors .inbox{
+  position: relative;
+  width: 350px;
+  height: auto;
+  background-color: hotpink;
+  padding: 20px;
+  border-radius: 20px;
+}
+.colors .inbox h2{
+  font-size: 20px;
+  color: #FFF;
+}
+.colors .inbox #input2{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  outline: none;
+}
+.colors .inbox .btn{
+  padding: 12px 25px;
+  border: 2px solid rebeccapurple;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  background: red;
+  display: block;
+  margin: 0 auto 20px;
+}
+.colors .inbox label{
+  position: fixed;
+  background: blue;
+  color: #FFF;
+  display: block;
+  padding: 10px;
+  width: 10%;
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+.colors .inbox:hover label{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*  color change  */
+
+/* .colorChange{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d5d5d5;
+}
+.cog{
+  width: 200px;
+  height: 140px;
+}
+
+.cog .btn{
+  border: 1px solid red;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: auto;
+  display: block;
+  background: sandybrown;
+} */
+
+/*  cursor pointer  */
+/* .cursor{
+ position: fixed;
+ width: 40px;
+ height: 40px;
+ top: 0;
+ left: 0;
+ transform: translate(-50%, -50%);
+ border-radius: 50%;
+ border: 2px solid red;
+ pointer-events: none;
+ z-index: 33;
+ transition: .1s;
+}
+.cursor2{
+  position: fixed;
+ width: 8px;
+ height: 8px;
+ top: 0;
+ left: 0;
+ transform: translate(-50%, -50%);
+ border-radius: 50%;
+ pointer-events: none;
+ background-color:  red;
+ z-index: 33; 
+ transition: .15s;
+} */
+
+
+
+/* .scrollbar .fa-arrow-up{
+    width: 54px;
+    height: 55px;
+    line-height: 57px;
+    font-size: 20px;
+    text-align: center;
+    background: red;
+    color: #FFF;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 900px;
+    right: 25px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.6s;
+}
+.scrollbar .fa-arrow-up.active{
+  bottom: 40px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.6s;
+} */
+
+
+
+/**/
+.comparison{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+}
+.comparison .wrapper{
+width: 500px;
+height:400px;
+background-color: #f7f7f7;
+border-radius: 20px;
+overflow: hidden;
+position: relative;
+}
+.comparison .wrapper .images{
+  width: 100%;
+  height: 100%;
+}
+.wrapper .images .img-1{
+  background: url(../image/hav1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%
+}
+.wrapper .images .img-2{
+  position: absolute;
+  background: url(../image/hav1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(12px);
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%
+}
+.ranger{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.ranger .rangeValue{
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+.ranger .rangeValue::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 400px;
+  width: 3px;
+  /* background-color: red; */
+  cursor: col-resize;
+}
+.ranger .dragable{
+  position: absolute;
+  width: 3px;
+  height: 400px;
+  left: 49.6%;
+  pointer-events: none;
+  /* background-color: #FFF; */
+}
+.ranger .dragable::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 180px;
+  top: 0;
+  background-color: #FFF;
+}
+.ranger .dragable::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 180px;
+  bottom: 0;
+  background-color: #FFF;
+}
+.ranger .dragable span{
+ width: 40px;
+ height: 40px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border-radius: 50%; 
+  border: 3px solid #FFF;
+}
+.ranger .dragable span::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -40%) rotate(45deg);
+  border: 10px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-left-color: #FFF;
+}
+.ranger .dragable span::after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -40%) rotate(45deg);
+  border: 10px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: #FFF;
+}
